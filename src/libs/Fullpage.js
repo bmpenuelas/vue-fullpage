@@ -209,7 +209,7 @@ class Fullpage {
             // see http://www.javascriptkit.com/javatutors/onmousewheel.shtml
             let detail = e.wheelDelta ? e.wheelDelta / 120 : e.detail
                 //let detail = e.detail ? e.detail * -120 : e.wheelDelta;
-            console.log(e.wheelDelta);
+                //console.log(e.wheelDelta);
             //Only support Y
             let der = this.direction = detail > 0 ? -1 : detail < 0 ? 1 : 0;
             let curIndex = der + this.curIndex;
@@ -406,7 +406,7 @@ Fullpage.defaultOptions = {
      */
     der: 0.1,
     /**
-    * 
+    *
     * @property {boolean} defualt:false
     */
     movingFlag: false,
@@ -423,7 +423,7 @@ Fullpage.defaultOptions = {
     /**
      * Callback after change
      *
-     * @function 
+     * @function
      * @params
      *     element {Element} current element
      *     currenIndex {Number} current number
@@ -438,14 +438,14 @@ Fullpage.defaultOptions = {
     animateClass: "anim",
     /*
      *    There are scroll bars in the page,
-     *    `auto` Detect any element in page 
+     *    `auto` Detect any element in page
      *    `scroll` Only detect current page
      *    `hidden` ignores the scroll bar in the page
-     *   @default hidden 
+     *   @default hidden
      */
     overflow: "hidden",
     /**
-    * disabled 
+    * disabled
     * @property {boolean}  default: false
     */
     disabled: false
